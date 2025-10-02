@@ -1,69 +1,168 @@
-
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: transparent;
-    z-index: 1000;
-    padding: 1rem 2rem;
-  }
-  
- 
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    border: 1px solid rgb(35, 38, 97);
-    height: 100%;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--surface-color);
+  z-index: 1000;
+  padding: 1rem 2rem;
+  transition: transform 0.3s ease-in-out, background-color 0.2s ease-in-out;
+  will-change: transform;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+.nav-logo img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+.brand-text {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
 
-  .nav-left,
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: var(--text-primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+.nav-links a:hover {
+  color: var(--accent-gold);
+  cursor: pointer;
+}
+
+.nav-right .nav-contact-btn {
+  background-color: var(--accent-gold);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
+  transition: filter 0.2s ease, background-color 0.2s ease;
+}
+.nav-right .nav-contact-btn:hover {
+  filter: brightness(0.95);
+}
+
+.nav-link-active {
+  color: var(--accent-gold) !important;
+}
+
+.desktop-only {
+  display: flex;
+}
+.mobile-only {
+  display: none;
+}
+
+.mobile-menu-button {
+  display: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  z-index: 1100;
+  padding: 1rem 2rem;
+  height: 70vh;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  overflow: auto;
+  transform: translateY(-8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.mobile-menu.open {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.mobile-menu-top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.mobile-menu a {
+  color: var(--text-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+.mobile-menu a:hover {
+  color: var(--accent-gold);
+}
+.mobile-menu-contact-button {
+  background-color: var(--accent-gold);
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  border-radius: 10px;
+  margin-top: auto;
+  color: #111;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background-color: var(--bg-color);
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+  .nav-links,
   .nav-right {
-    flex: 1;
+    display: none !important;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+  .mobile-menu-button {
     display: flex;
-    gap: 1.2rem;
-    align-items: center;
-    justify-content: space-evenly;
   }
-  
 
-  .nav-center {
-    flex: 1;
-    text-align: center;
+  .navbar.mobile-hide {
+    transform: translateY(-100%);
   }
-  
-
-  .logo {
-    color: var(--color-primary-gold); 
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  .navbar.mobile-show {
+    transform: translateY(0);
   }
-  
-
-  a {
-    color: var(--color-light-neutral);
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-  }
-  
-  a:hover {
-    color: var(--color-primary-gold); 
-  }
-  
-
-  main {
-    padding-top: 80px;
-  }
-  
-  .nav-center img {
-    height: 50px; /* adjust to fit your design */
-    width: auto;
-    object-fit: contain;
-  }
+}

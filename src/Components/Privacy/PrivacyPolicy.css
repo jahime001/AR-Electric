@@ -1,0 +1,23 @@
+.Privacy {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 5rem;
+  padding: 3rem 1rem;
+  color: var(--text-main);
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+.privacy-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.privacy-subheader {
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+.privacy-content h2 {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}

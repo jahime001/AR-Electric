@@ -1,0 +1,76 @@
+[
+  {
+    "title": "Basic Electrical",
+    "description": "We handle everyday electrical needs including outlet replacements, wiring upgrades, and general maintenance for both homes and businesses.",
+    "details": "We handle everyday electrical needs including outlet replacements, wiring upgrades, fixture installations, and general maintenance. Whether it's residential or commercial, our licensed electricians ensure safety and efficiency every step of the way.",
+    "icon": "BasicElectrical",
+    "slug": "basic-electrical",
+    "galleryFolder": "basic-electrical",
+    "highlights": ["Outlets", "Wiring", "Switches", "Fixtures", "Repairs"]
+  },
+  {
+    "title": "Service Changes",
+    "description": "Whether you're upgrading an old system or expanding your space, we perform safe and code-compliant service panel changes.",
+    "details": "We provide full-service electrical panel upgrades and service changes. Our work meets current codes and power demands, ensuring safety and room for expansion.",
+    "icon": "ServiceChanges",
+    "slug": "service-changes",
+    "highlights": [
+      "Panel Upgrade",
+      "Breaker Replacement",
+      "Load Capacity",
+      "Code Compliance"
+    ]
+  },
+  {
+    "title": "Tesla Battery Chargers",
+    "description": "We specialize in installing Tesla and EV battery chargers, ensuring proper voltage, safety, and fast, efficient home charging.",
+    "details": "We install Tesla Wall Connectors and other EV chargers, ensuring optimal voltage and compliance with manufacturer and local safety guidelines.",
+    "icon": "TeslaBatteryChargers",
+    "slug": "tesla-battery-chargers",
+    "highlights": [
+      "EV Chargers",
+      "Tesla Wall Connector",
+      "Voltage Setup",
+      "Safety Inspection"
+    ]
+  },
+  {
+    "title": "Panel Swaps",
+    "description": "Outdated or overloaded panel? We replace it with a modern solution built to handle your growing electrical demands.",
+    "details": "Our panel swap service includes safe removal of outdated units and installation of upgraded panels to support your modern power needs.",
+    "icon": "PanelSwaps",
+    "slug": "panel-swaps",
+    "highlights": [
+      "Old Panel",
+      "Replacement",
+      "Circuit Expansion",
+      "Electrical Safety"
+    ]
+  },
+  {
+    "title": "Light Installations",
+    "description": "From recessed lighting to chandeliers and outdoor fixtures, we professionally install lighting that enhances style and safety.",
+    "details": "We install interior and exterior lighting fixtures, from modern recessed lighting to stylish chandeliers. We also handle wiring and switch configurations.",
+    "icon": "LightInstallations",
+    "slug": "light-installations",
+    "highlights": [
+      "Indoor Lighting",
+      "Outdoor Lighting",
+      "Recessed Lights",
+      "Chandeliers"
+    ]
+  },
+  {
+    "title": "Troubleshooting",
+    "description": "We quickly identify and fix complex electrical issues, minimizing downtime while keeping your home or business running smoothly.",
+    "details": "Having issues with flickering lights, blown circuits, or inconsistent power? We identify the root cause and apply fast, lasting solutions.",
+    "icon": "Troubleshooting",
+    "slug": "troubleshooting",
+    "highlights": [
+      "Flickering Lights",
+      "Breaker Trips",
+      "Power Surges",
+      "Electrical Diagnosis"
+    ]
+  }
+]

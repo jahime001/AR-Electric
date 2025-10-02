@@ -11,9 +11,24 @@
     "build:css": "tailwindcss -i ./src/styles.css -o ./dist/output.css --watch"
   },
   "dependencies": {
+    "@cloudinary/react": "^1.14.3",
+    "@cloudinary/url-gen": "^1.21.0",
+    "@emailjs/browser": "^4.4.1",
+    "@lottiefiles/dotlottie-react": "^0.14.2",
+    "@mdi/js": "^7.4.47",
+    "@mdi/light-js": "^0.2.63",
+    "@mdi/react": "^1.6.1",
+    "axios": "^1.10.0",
+    "fuse.js": "^7.1.0",
+    "hamburger-react": "^2.5.2",
+    "lottie-react": "^2.4.1",
     "react": "^19.1.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^19.1.0",
-    "react-router-dom": "^7.6.2"
+    "react-intersection-observer": "^9.16.0",
+    "react-responsive-masonry": "^2.7.1",
+    "react-router-dom": "^7.6.2",
+    "react-scroll": "^1.9.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",

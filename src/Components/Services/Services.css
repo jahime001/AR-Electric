@@ -1,0 +1,137 @@
+.Services {
+  min-height: 90vh;
+
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services-header {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+.services-header h2 {
+  font-size: 2rem;
+  color: var(--text-muted);
+}
+.services-header h3 {
+  font-size: 2rem;
+}
+
+.service-cards-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 900px) {
+  .service-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .service-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+.service-card {
+  background-color: var(--surface-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  height: 100%;
+  transition: background-color 0.5s ease, transform 0.3s ease;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+}
+
+.service-card h3 {
+  height: 20%;
+  text-align: start;
+  font-weight: 400;
+  color: text-primary;
+  font-weight: 400;
+}
+.service-card p {
+  height: 50%;
+  font-weight: 200;
+  color: var(text-muted);
+}
+
+.service-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+
+.service-card:hover {
+  background-color: #000000;
+  transform: translateY(-5px);
+  color: rgb(255, 255, 255);
+}
+
+.service-card:hover h3 {
+  color: rgb(255, 255, 255);
+}
+
+.service-card:hover p {
+  color: rgb(255, 255, 255);
+}
+.services-header h4 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
+    .services-header {
+      margin-bottom: 5rem;
+    }
+    .services-header h3 {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 20px;
+    }
+    .services-header h2 {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+}
+.service-link {
+  text-decoration: none;
+  font-weight: 300;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.service-link:hover {
+  opacity: 0.5;
+}
